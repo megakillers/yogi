@@ -14,7 +14,7 @@ let handler = async (m) => {
     body
   })
   if (res.status !== 200) throw await res.json()
-  await conn.sendFile(m.chat, await res.buffer(), 'hd.jpg', 'Nih, hd kan?', m)
+  await conn.sendFile(m.chat, await res.buffer(), 'hd.jpg', 'Tamaño 4k', m)
 }
 handler.help = ['hd (caption|reply media)', 'enhance (caption|reply media)']
 handler.tags = ['tools']

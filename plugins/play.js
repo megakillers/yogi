@@ -18,7 +18,7 @@ let handler = async (m, { conn, command, text, isPrems, isOwner }) => {
       usedServer = server
       break
     } catch (e) {
-      m.reply(`Server ${server} error!${servers.length >= i + 1 ? '' : '\nmencoba server lain...'}`)
+      m.reply(`Server ${server} error!${servers.length >= i + 1 ? '' : '\nProbando otro servidor...'}`)
     }
   }
   if (yt === false) throw 'Semua server tidak bisa :/'
@@ -52,4 +52,8 @@ handler.exp = 0
 handler.limit = true
 
 module.exports = handler
+
+
+
+
 
